@@ -35,17 +35,18 @@ body{
 
 /*video start*/
 .video-container {
-	position: relative;
+    position:relative;
 	padding-bottom: 50.25%;
 	padding-top: 30px;
 	height: 0;
 	overflow:hidden;
+    
 }
  
 .video-container iframe,
 .video-container object,
 .video-container embed {
-	position: absolute;
+	position:absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -86,8 +87,122 @@ body{
 /*user info start*/
 
 .user_info img{
-    border-radius: 50%;
+    border-radius: 90%;
+    padding-right:10px;
 }
+
+.user_info{
+    padding:8px 12px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.user_info .user_sub1{
+    font-size:5px;
+    color:rgb(121, 121, 121);
+}
+.user_sub2{
+    position:absolute;
+    right:10px;
+    padding:8px 12px;
+}
+
+.user_sub2 a{
+    text-decoration: none;
+    color:red;
+}
+
+
 /*user info end*/
 
+/*video index start*/
+.video_index{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top:8px;
+}
+.video_index_info{
+    color:rgb(121, 121, 121);
+    padding-bottom:3px;
+    font-size:13px;
+}
+.icon{
+    position:absolute;
+    right:15px;
+}
+/*1*/
+.video_index1{
+    display: flex;
+    margin-bottom:10px;
+}
+.video_index1_text{
+    align-content: flex-start;
+    margin-left:10px;
+}
+.video_index1_text h5{
+    margin-bottom:0;
+    margin-top:3px;
+}
+.video_index1_text h6{
+    margin-top:6px;
+    color:rgb(121, 121, 121)
+}
+/*2*/
+.video_index2{
+    display: flex;
+    margin-bottom:10px;
+}
+.video_index2_text{
+    margin-left:10px;
+}
+.video_index2_text h5{
+    margin-bottom:0;
+    margin-top:3px;
+}
+.video_index2_text h6{
+    margin-top:6px;
+    color:rgb(121, 121, 121)
+}
+/*3*/
+.video_index3{
+    display: flex;
+    margin-bottom:10px;
+}
+.video_index3_text{
+    margin-left:10px;
+}
+.video_index3_text h5{
+    margin-bottom:0;
+    margin-top:3px;
+}
+.video_index3_text h6{
+    margin-top:6px;
+    color:rgb(121, 121, 121)
+}
+/*4*/
+.video_index4{
+    display: flex;
+    margin-bottom:10px;
+}
+.video_index4_text{
+    margin-left:10px;
+}
+.video_index4_text h5{
+    margin-bottom:0;
+    margin-top:3px;
+}
+.video_index4_text h6{
+    margin-top:6px;
+    color:rgb(121, 121, 121)
+}
 
+/*video index end*/
+
+/*hover effect*/
+.user_sub2:hover{
+    transition: background-color .5s;
+    text-decoration: none;
+    background-color: #1d1d1d;
+    border-radius: 6px;
+}
