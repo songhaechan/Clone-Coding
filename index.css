@@ -1,6 +1,39 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 40px;
+
+  /* Font-size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+button,
+button:focus {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 /*navnar start!*/
 
@@ -48,6 +81,7 @@ body {
 .video-container object,
 .video-container embed {
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -116,39 +150,60 @@ body {
 /*user info end*/
 
 /*video index start*/
-.video_index {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  margin-top: 8px;
-}
-.video_index_info {
-  color: rgb(121, 121, 121);
-  padding-bottom: 3px;
-  font-size: 13px;
-}
-.icon {
-  position: absolute;
-  right: 15px;
-}
-/*1*/
-.video_index1 {
-  display: flex;
-  margin-bottom: 10px;
-}
-.video_index1_text {
-  align-content: flex-start;
-  margin-left: 10px;
-}
-.video_index1_text h5 {
-  margin-bottom: 0;
-  margin-top: 3px;
-}
-.video_index1_text h6 {
-  margin-top: 6px;
-  color: rgb(121, 121, 121);
+.upNext {
+  margin: var(--padding);
 }
 
+.upNext > .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+
+.upNext ul {
+  margin-top: var(--padding);
+}
+
+.upNext .item {
+  display: flex;
+}
+
+.upNext .item img {
+  width: 100%;
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--padding);
+}
+
+.upNext .item .info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.upNext .item .moreBtn {
+  height: 100%;
+  font-size: 16px;
+}
+
+.infoAndUpnext {
+  display: flex;
+  flex-direction: column;
+  margin: var(--padding);
+}
 /*video index end*/
 
 /*hover effect*/
